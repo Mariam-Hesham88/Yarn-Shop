@@ -1,0 +1,256 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color: #200E0D;
+    --hover-color: #F2B3AC;
+    --scolor : #F9AB9F;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg-fixed-img{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F2B3AC), to(#F2B3AC)), url(../imags/overlay-bg.jpg);
+    background-image: -o-linear-gradient(#F2B3AC, #F2B3AC), url(../imags/overlay-bg.jpg);
+    background-image: linear-gradient(#F2B3AC, #F2B3AC), url(../imags/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.w-10{
+    width: 10%;
+}
+
+/* NAVIGATIONBAR */
+.bg-nav{
+    background-color: var(--main-color);
+}
+
+.logo{
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.ul-a{
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* HOME */
+.home{
+    background-color: var(--scolor);
+}
+.home .head {
+    color: #701808;
+    font-family: "Grey Qo", cursive;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 86px;
+}
+
+.home h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 86px;
+    font-weight: 500;
+}
+
+.home h2{
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.home button{
+    color: #fff;
+    background-color: #701808;
+    border: solid 2px #701808;
+    font-size: 19px;
+    line-height: 29px;
+    -webkit-transition: border 1s;
+    -o-transition: border 1s;
+    transition: border 1s;
+}
+
+/* ABOUT */
+.about,
+.services{
+    background-color: var(--hover-color);
+}
+
+.about h2{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.about p{
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.about h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: var(--main-color);
+    width: 200px;
+    bottom: 20px;
+}
+
+/* CAPTION */
+.caption .h2{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+.caption .line {
+    width: 50px;
+    height: 4px;
+    background-color: var(--main-color);
+    margin: 0 auto;
+}
+
+.card-border{
+    border: solid 2px transparent;
+    border-radius: 4px;
+}
+
+/* SERVICES */
+.services h2{
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.services p{
+    color: rgb(78, 78, 78);
+    line-height: 24px;
+}
+
+/* carousel */
+.carousel{
+    color: #fff;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* CONTACT */
+.contact h5{
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.contact h5::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: var(--main-color);
+    width: 100px;
+    bottom: 20px;
+}
+
+.contact textarea{
+    resize: none;
+}
+
+.contact button{
+    color: #fff;
+    background-color: var(--main-color);
+    border: solid 2px var(--main-color);
+    font-size: 19px;
+    line-height: 29px;
+    -webkit-transition: border 1s;
+    -o-transition: border 1s;
+    transition: border 1s;
+}
+
+.contact button:hover{
+    border: solid 4px var(--hover-color) ;
+}
+
+.contact i{
+    color: var(--main-color);
+    line-height: 32px;
+}
+
+.contact .social-media span{
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 3px var(--main-color);
+    -webkit-transition: border-color;
+    -o-transition: border-color;
+    transition: border-color;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.contact .social-media span:hover{
+    background-color: var(--main-color);
+    border-color:  var(--hover-color);
+}
+
+.contact .social-media li{
+    display: inline;
+    padding: 5px;
+}
+
+.contact .social-media li i{
+    color: black;
+    font-size: 19px;
+    line-height: 31px;
+    -webkit-transition: color 1.5s;
+    -o-transition: color 1.5s;
+    transition: color 1.5s;
+}
+
+/* FOOTER */
+.footer{
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.footer a{
+    color: #fff;
+}
